@@ -4,18 +4,59 @@
     padding: 0;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navbar */
+.nav{
+    background-color: #f5f5f5;
+    width: auto;
+    height: 75px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 25px;
+}
+.navbar h1{
+    font-size: 25px;
+}
+.navbar button{
+    background-color: green;
+    border: none;
+    border-radius: 3px;
+    padding: 8px;
+    color: white;
+}
+.navbar button:hover{
+ background-color: red;
+}
+
 /* Hero Section */
 .hero{
     width: auto;
-    height: 640px;
+    height: 600px;
+    background-color: #f5f5f5;
+    padding-top: 10px;
+    padding-inline: 70px;
+}
+
+.hero-container{
     background-color: #c6e4d6;
+    border: none;
+    border-radius: 25px;
+    padding: 20px;
     display: flex;
     justify-content: space-around;
 }
 
 .hero-left{
     flex-direction: column;
-    padding-top: 90px;
+    padding-top: 50px;
     padding-inline: 70px;
     align-items: center;
     justify-content: space-between;
@@ -28,7 +69,7 @@
 }
 .hero-left h1{
     padding-bottom: 20px;
-    font-size: 50px;
+    font-size: 39px;
 }
 .hero-left button{
     padding: 15px;
@@ -45,7 +86,8 @@
 .hero-right{
     max-width: 100%;
     height: auto;
-    padding-top: 90px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     padding-inline: 70px;
 }
 
@@ -152,6 +194,38 @@
 .vision-bottom-cardright button:hover{
     background-color: red;
 }
+
+/* Quote Section */
+.quote{
+    width: auto;
+    height: 550px;
+    background-color: #f5f5f5;
+    padding-inline: 70px;
+}
+
+.quote-container{
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 30px;
+}
+.quote-container div{
+    background: url('pictures/quote-bg.png') no-repeat left top;
+    display: inline-block;
+}
+.quote-container p{
+    text-align: justify;
+    padding-top: 25px;
+}
+.quote-container h1{
+    padding-top: 20px;
+}
+.quote-container h4{
+    padding-top: 10px;
+    color: #768a80;
+    font-weight: 400;
+}
+
 
 /* News Section */
 .news{
@@ -272,7 +346,7 @@
 .donate-top p{
     color: #768a80;
     text-align: center;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 
 .donate-centercard{
@@ -314,7 +388,7 @@
     padding-left: 45px;
     padding-right: 80px;
     padding-top: 5px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 .donate-centerinput input{
     background-color: white;
@@ -355,12 +429,18 @@
 /* Subscribe Section */
 .subscribe{
     width: auto;
-    height: 500px;
+    height: 450px;
     background-color: #f5f5f5;
     padding-top: 0px;
     padding-inline: 70px;
 }
 
+.subscribe-container{
+    background: #c6e4d6;
+    border: none;
+    border-radius: 10px;
+    padding: 25px;
+}
 .subscribe-container h1{
     padding-bottom: 30px;
     color: black;
@@ -415,4 +495,24 @@
     color: #768a80;
     text-align: center;
     font-weight: bolder;
+}
+
+/* Footer */
+.footer{
+    background-color: white;
+    padding: 20px;
+}
+.footer-container h1{
+    font-size: 12px;
+    text-align: center;
+    color: rgb(150, 128, 3);
+}
+.footer-container div{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    padding-top: 5px;
+}
+.footer-container img{
+    height: 12px;
 }
